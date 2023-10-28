@@ -1,6 +1,5 @@
 package ejercicio_05;
 
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
@@ -23,16 +22,14 @@ public class Ejercicio_05 {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Ejercicio_05 window = new Ejercicio_05();
-					window.frmEjercicio.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+
+		try {
+			Ejercicio_05 window = new Ejercicio_05();
+			window.frmEjercicio.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	/**

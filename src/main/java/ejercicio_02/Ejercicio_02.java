@@ -1,7 +1,5 @@
 package ejercicio_02;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import java.awt.Window.Type;
 import javax.swing.JButton;
@@ -21,16 +19,13 @@ public class Ejercicio_02 {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Ejercicio_02 window = new Ejercicio_02();
-					window.frmEjercicio.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+
+		try {
+			Ejercicio_02 window = new Ejercicio_02();
+			window.frmEjercicio.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -68,7 +63,7 @@ public class Ejercicio_02 {
 
 		btn1.addActionListener(aLbnb1);
 		btn2.addActionListener(aLbnb2);
-		
+
 		frmEjercicio.setLocationRelativeTo(null);
 
 	};

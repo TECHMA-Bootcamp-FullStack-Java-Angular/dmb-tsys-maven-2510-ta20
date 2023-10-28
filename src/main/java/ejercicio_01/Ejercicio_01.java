@@ -1,7 +1,5 @@
 package ejercicio_01;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.BorderLayout;
@@ -17,16 +15,14 @@ public class Ejercicio_01 {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Ejercicio_01 window = new Ejercicio_01();
-					window.frmEjercicio.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
+
+		try {
+			Ejercicio_01 window = new Ejercicio_01();
+			window.frmEjercicio.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	/**
@@ -40,18 +36,18 @@ public class Ejercicio_01 {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		
+
 		frmEjercicio = new JFrame();
 		frmEjercicio.setTitle("Ejercicio 1");
 		frmEjercicio.setBounds(100, 100, 348, 96);
 		frmEjercicio.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+
 		JLabel lblNewLabel = new JLabel("Hola, soy una Venatana Dimensionable");
 		lblNewLabel.setForeground(new Color(153, 0, 255));
 		lblNewLabel.setFont(new Font("Segoe UI", Font.BOLD, 16));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		frmEjercicio.getContentPane().add(lblNewLabel, BorderLayout.CENTER);
-		
+
 		frmEjercicio.setLocationRelativeTo(null);
 	}
 
